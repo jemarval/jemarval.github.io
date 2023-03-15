@@ -1,0 +1,225 @@
+/* ----------------------------------- */
+/* -------------- Resets ------------- */
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline;
+    box-sizing: border-box;
+    /* outline: solid green; */
+}
+    
+body {
+    line-height: 1.625;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--clr-main-gray);
+}
+
+img,
+audio,
+video {
+    height: auto;  
+    max-width: 100%;
+    display: block;
+} 
+
+/* ----------------------------------- */
+/* ---------- Root Variables --------- */
+/* ADJUST AS NEEDED - ASSIGN AS NECCESARY */
+
+:root {
+    --clr-background-gray: hsl(0, 0%, 95%);
+    --clr-main-gray: hsl(0, 0%, 35%);
+    --clr-dark-gray: hsl(0, 0%, 15%);
+    /* --section-padding: clamp(0.5rem, 3vw, 1rem) clamp(0.1rem, 3vw, 3rem); */
+}
+
+/* UTILITY CLASSES */
+
+/* ----------------------------------- */
+/* ----------- Main Styles ----------- */
+
+/* Titles */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Beckman', sans-serif;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 4.75rem;
+    line-height: 0.75;
+}
+
+h1 span {
+    text-shadow: 4px 4px 13px hsl(0deg 0% 61%);
+    color: var(--clr-background-gray);
+    font-size: 2.75rem;
+    vertical-align: top;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 0.70;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 0.70;
+}
+
+h4 {
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+p {
+    margin-top: 1.25rem;
+}
+
+/* Components */
+
+a {
+    font-weight: 600;
+    color: var(--clr-dark-gray);
+}
+
+.btn {
+    font-family: 'Beckman', sans-serif;
+    font-weight: 900;
+    padding: 1.25rem 2.5rem;
+}
+
+.btn img{
+    display: inline-block;
+}
+
+.cta {
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-background-gray);
+}
+
+section {
+    padding: 5rem 1.5rem;
+    border-bottom: 1px solid var(--clr-main-gray);
+}
+
+/* nav */
+
+nav {
+    padding: 1rem 1.5rem;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--clr-main-gray);
+    align-items: center;
+}
+
+nav span {
+    font-family: 'Beckman', sans-serif;
+    font-weight: 900;
+    font-size: 1.875rem;
+}
+
+nav img {
+    height: 2rem;
+}
+
+/* hero */
+
+#hero .btn {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    width: 100%;
+    max-width: 23rem;
+}
+
+/* portfolio */
+
+#portfolio-cards {
+    margin-top: 2.5rem;
+    gap: 2.5rem;    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+}
+
+.card {
+    border: 1px solid var(--clr-main-gray);
+    flex: 1 1 22rem;
+    padding-right: 3rem;
+}
+
+.card-img {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    border-bottom: 1px solid var(--clr-main-gray);
+}
+
+.card-content {
+    padding: 3rem 0 2.5rem 1.5rem;
+}
+
+.card-tags {
+    margin-top: 2rem;
+}
+
+.card-tags div {
+    display: inline-block;
+    border: 1px dashed var(--clr-main-gray);
+    padding: 0 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* contact */
+
+#contact {
+    text-align: center;
+}
+#contact h2 {
+    font-size: 2.375rem;
+    line-height: 1;
+}
+
+#contact button {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    width: clamp(12rem, 100%, 16rem);
+    border: 1px solid var(--clr-background-gray);
+}
+
+/* footer */
+
+footer {
+    padding: 1.5rem;
+}
+
+.footer-icons {
+    border-bottom: 1px solid var(--clr-main-gray);
+    width: clamp(15rem, 80%, 22rem);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.footer-icons img {
+    margin: 0 1rem;
+    
+}
+
+footer p{
+    margin: auto;
+    text-align: center;
+}
