@@ -152,6 +152,18 @@ nav img {
     height: 2rem;
 }
 
+@media only screen and (min-width: 30rem){
+    nav {
+        padding: 1rem 2.5rem;
+    }    
+}
+
+@media only screen and (min-width: 60rem){
+    nav {
+        padding: 1rem 4rem;
+    }    
+}
+
 /* hero */
 
 #hero .btn {
