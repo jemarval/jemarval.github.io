@@ -117,6 +117,18 @@ section {
     border-bottom: 1px solid var(--clr-main-gray);
 }
 
+@media only screen and (min-width: 30rem){
+    section {
+        padding: 5rem 2.5rem;
+    }    
+}
+
+@media only screen and (min-width: 60rem){
+    section {
+        padding: 5rem 4rem;
+    }    
+}
+
 /* nav */
 
 nav {
@@ -216,7 +228,11 @@ nav img {
 
 #contact {
     text-align: center;
+    max-width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 #contact h2 {
     font-size: 2.375rem;
     line-height: 1;
@@ -228,9 +244,15 @@ nav img {
     margin: 2.5rem auto 0.5rem;
 }
 
+#contact h4 a {
+    color: var(--clr-background-gray);
+    opacity: 0.8;
+}
+
 /* footer */
 
 footer {
+    border-top: 1px solid var(--clr-main-gray);
     padding: 1.5rem;
 }
 
@@ -252,3 +274,12 @@ footer p{
     margin: auto;
     text-align: center;
 }
+
+
+/* media queries breaks to consider:
+767:
+ tablet, add left side bar, change contact button from hero to nav
+
+991 make contact dark background a fixed width centered
+add right side column with skills to hero
+ */
