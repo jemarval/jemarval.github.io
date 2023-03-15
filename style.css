@@ -144,6 +144,12 @@ section {
     padding-top: 5rem; 
     transition: .5s; /* 0.5 second transition effect to slide in the sidebar */
   }
+
+/*   @media only screen and (min-width: 30rem){
+    .sidebar {
+        left: -15rem;
+    }    
+} */
   
 
   .sidebar a {   /* The sidebar links */
@@ -176,6 +182,12 @@ section {
     transition: left .5s; /* If you want a transition effect */
     top: 5.375rem;
   }
+
+/*   @media only screen and (min-width: 30rem){
+    #main {
+        left: 5rem;
+    }    
+} */
   
 /* nav */
 
@@ -224,6 +236,17 @@ nav img {
 }
 
 /* portfolio */
+#portfolio {
+    position: relative; /* to fix nabvar offset with internal links */
+}
+
+
+#portfolio-offset {
+width: 1px;
+height: 1px;
+position: absolute;
+top: -5rem;
+}
 
 #portfolio-cards {
     margin-top: 2.5rem;
