@@ -93,13 +93,17 @@ a {
     color: var(--clr-dark-gray);
 }
 
-.btn {
+a.btn {
     font-family: 'Beckman', sans-serif;
     font-weight: 900;
     padding: 1.25rem 2.5rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    max-width: 23rem;
 }
 
-.btn img{
+a.btn img{
     display: inline-block;
 }
 
@@ -141,8 +145,7 @@ nav img {
 #hero .btn {
     font-size: 2rem;
     margin-top: 2.5rem;
-    width: 100%;
-    max-width: 23rem;
+    
 }
 
 /* portfolio */
@@ -158,6 +161,8 @@ nav img {
     border: 1px solid var(--clr-main-gray);
     flex: 1 1 22rem;
     padding-right: 3rem;
+    /* to make project-link move to bottom-right */
+    position: relative;
 }
 
 .card-img {
@@ -172,10 +177,12 @@ nav img {
 
 .card-content {
     padding: 3rem 0 2.5rem 1.5rem;
+    
 }
 
 .card-tags {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .card-tags div {
@@ -187,6 +194,24 @@ nav img {
     font-size: 0.875rem;
 }
 
+.project-link {
+    position: absolute;
+    right: 2.9rem;
+    bottom: 1rem;
+
+}
+
+.project-link a {
+    text-decoration: none;   
+    color: var(--clr-main-gray);
+    font-size: 0.875rem;
+    font-family: 'Beckman', sans-serif;
+}
+
+.project-link a:after {
+    content: ' \2794';
+  }
+
 /* contact */
 
 #contact {
@@ -197,11 +222,10 @@ nav img {
     line-height: 1;
 }
 
-#contact button {
+#contact a.btn {
     font-size: 1.5rem;
-    margin-top: 2.5rem;
-    width: clamp(12rem, 100%, 16rem);
     border: 1px solid var(--clr-background-gray);
+    margin: 2.5rem auto 0.5rem;
 }
 
 /* footer */
