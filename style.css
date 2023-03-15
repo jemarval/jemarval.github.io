@@ -18,6 +18,7 @@ body {
     font-weight: 400;
     font-size: 1rem;
     color: var(--clr-main-gray);
+    background-color: var(--clr-background-gray);
 }
 
 img,
@@ -131,15 +132,90 @@ section {
 
 /* nav */
 
+/* nav test for sidebar */
+
+
+/* The sidebar menu */
+.sidebar {
+    height: calc(100% - 5.375rem); /* 100% Full-height */
+    width: 20rem;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 5.375rem;
+    left: -20rem;
+    bottom: 7.25rem;
+    background-color: var(--clr-dark-gray); /* Black*/
+    /* translate: -20rem; */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 5.375rem; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--clr-main-gray);
+    border: none;
+    background-color: var(--clr-background-gray);
+  }
+  
+  .openbtn:hover {
+    color: var(--clr-dark-gray);
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    position: relative;
+    transition: left .5s; /* If you want a transition effect */
+    top: 5.375rem;
+    /* padding: 20px; */
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+/* end of test for sidebar */
+
 nav {
     padding: 1rem 1.5rem;
-    /* position: absolute;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid var(--clr-main-gray);
     align-items: center;
+    z-index: 5;
+    background-color: var(--clr-background-gray);
 }
 
 nav span {
@@ -266,6 +342,7 @@ nav img {
 footer {
     border-top: 1px solid var(--clr-main-gray);
     padding: 1.5rem;
+    background-color: var(--clr-background-gray);
 }
 
 .footer-icons {

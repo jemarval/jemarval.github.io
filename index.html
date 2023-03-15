@@ -21,91 +21,103 @@
     <nav>
         <img src="/assets/img/logo.svg" alt="Jose Marval Logo">
         <span>Jose Marval</span>
-        <img src="/assets/img/menuicon.svg" alt="Menu icon">
+        <button id="menubtn" class="openbtn">&#9776;</button>
+        <!-- <img src="/assets/img/menuicon.svg" alt="Menu icon"> -->
     </nav>
-    <section id="hero">
-        <h1>Front<br>End<br><span>Developer</span></h1>
-        <p>My mission is to design websites and web apps that people love. From concept and wireframing to publishing online.</p> 
-        <p>I develop in HTML, CSS, and JavaScript, and use GitHub for version control. Here's <a class="link" href="">my resume in pdf</a>.</p>
-        <a href="#contact" target="_blank" class="btn cta">Let's talk</a>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>her are some of my latest projects:</p>
-        <div id="portfolio-cards">
-            <div class="card">
-                <div class="card-img">
-                    <img src="/assets/img/cloudplot.jpg" alt="">
+    <div id="mySidebar" class="sidebar">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <h3><a href="#">Portfolio</a></h3>
+        <h3><a href="#">About me</a></h3>
+        <h3><a href="#">Contact</a></h3>
+        <h3><a href="#">My resume</a></h3>
+      </div>
+      
+    <div id="main">
+
+        <section id="hero">
+            <h1>Front<br>End<br><span>Developer</span></h1>
+            <p>My mission is to design websites and web apps that people love. From concept and wireframing to publishing online.</p> 
+            <p>I develop in HTML, CSS, and JavaScript, and use GitHub for version control. Here's <a class="link" href="">my resume in pdf</a>.</p>
+            <a href="#contact" target="_blank" class="btn cta">Let's talk</a>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>her are some of my latest projects:</p>
+            <div id="portfolio-cards">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/assets/img/cloudplot.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Cloudplot</h3>
+                        <p>Asset management web app for the construction industry</p>
+                        <div class="card-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">GitHub</div>
+                        </div>
+                        <div class="project-link">
+                            <a href="http://"  target="_blank">Project details</a>
+                        </div>
+                    </div>                
                 </div>
-                <div class="card-content">
-                    <h3>Cloudplot</h3>
-                    <p>Asset management web app for the construction industry</p>
-                    <div class="card-tags">
-                        <div class="tag">HTML5</div>
-                        <div class="tag">CSS3</div>
-                        <div class="tag">GitHub</div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/assets/img/bitnapse_desktop.png" alt="">
                     </div>
-                    <div class="project-link">
-                        <a href="http://"  target="_blank">Project details</a>
-                    </div>
-                </div>                
-            </div>
-            <div class="card">
-                <div class="card-img">
-                    <img src="/assets/img/bitnapse_desktop.png" alt="">
+                    <div class="card-content">
+                        <h3>Bitnapse</h3>
+                        <p>Systems design  landing page with contact form  (in progress).</p>
+                        <div class="card-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">Bash</div>
+                            <div class="tag">GitHub</div>
+                            <div class="tag">Figma</div>
+                        </div>
+                        <div class="project-link">
+                            <a href="http://"  target="_blank">Project details</a>
+                        </div>
+                    </div>                
                 </div>
-                <div class="card-content">
-                    <h3>Bitnapse</h3>
-                    <p>Systems design  landing page with contact form  (in progress).</p>
-                    <div class="card-tags">
-                        <div class="tag">HTML5</div>
-                        <div class="tag">CSS3</div>
-                        <div class="tag">JavaScript</div>
-                        <div class="tag">Bash</div>
-                        <div class="tag">GitHub</div>
-                        <div class="tag">Figma</div>
+                            <div class="card">
+                    <div class="card-img">
+                        <img src="/assets/img/jmprotec.png" alt="">
                     </div>
-                    <div class="project-link">
-                        <a href="http://"  target="_blank">Project details</a>
-                    </div>
-                </div>                
-            </div>
-                        <div class="card">
-                <div class="card-img">
-                    <img src="/assets/img/jmprotec.png" alt="">
+                    <div class="card-content">
+                        <h3>JM Protec</h3>
+                        <p>Car tuning company website with calendar appointments (in progress).</p>
+                        <div class="card-tags">
+                            <div class="tag">HTML5</div>
+                            <div class="tag">CSS3</div>
+                            <div class="tag">JavaScript</div>
+                            <div class="tag">Bash</div>
+                            <div class="tag">GitHub</div>
+                            <div class="tag">Figma</div>
+                        </div>
+                        <div class="project-link">
+                            <a href="http://"  target="_blank">Project details</a>
+                        </div>
+                    </div>                
                 </div>
-                <div class="card-content">
-                    <h3>JM Protec</h3>
-                    <p>Car tuning company website with calendar appointments (in progress).</p>
-                    <div class="card-tags">
-                        <div class="tag">HTML5</div>
-                        <div class="tag">CSS3</div>
-                        <div class="tag">JavaScript</div>
-                        <div class="tag">Bash</div>
-                        <div class="tag">GitHub</div>
-                        <div class="tag">Figma</div>
                     </div>
-                    <div class="project-link">
-                        <a href="http://"  target="_blank">Project details</a>
-                    </div>
-                </div>                
-            </div>
-                </div>
-    </section>
-    <section id="contact" class="cta">
-        <h2>Let's jump on a quick call</h2>
-        <p>Ask me any questions or drop me a hello. Let's make awesome, eye candy, pixel perfect websites.</p>
-        <a href="http://" target="_blank" class="btn cta"><img src="/assets/img/icon-whatsapp.svg" alt=""> Let's talk</a>
-        <h4><a href="mailto:hi@josemarval.dev">or send me an email</a> </h4>
-    </section>
+        </section>
+        <section id="contact" class="cta">
+            <h2>Let's jump on a quick call</h2>
+            <p>Ask me any questions or drop me a hello. Let's make awesome, eye candy, pixel perfect websites.</p>
+            <a href="http://" target="_blank" class="btn cta"><img src="/assets/img/icon-whatsapp.svg" alt=""> Let's talk</a>
+            <h4><a href="mailto:hi@josemarval.dev">or send me an email</a> </h4>
+        </section>
     <footer>
         <div class="footer-icons">
             <a href=""><img src="/assets/img/icon-github.svg" alt=""></a>
             <a href=""><img src="/assets/img/icon-linkedin.svg" alt=""></a>
             <a href=""><img src="/assets/img/icon-codepen.svg" alt=""></a>
-        </div>
+    </div>
         <p>Copyright ©2022  josemarval.dev</p>
     </footer>
     
+    <script src="/script.js"></script>
 </body>
 </html>
