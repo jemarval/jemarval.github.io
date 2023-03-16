@@ -58,6 +58,7 @@
         desktopNav.style.display = 'none';
         mobileNav.style.display = 'flex';
     }
+    closeNav();
   }
   window.addEventListener('resize', navDisplays)
 //   sidebarLinks.addEventListener('click', closeNav)
