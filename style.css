@@ -205,7 +205,7 @@ section {
   #main {
     position: relative;
     transition: left .5s; /* If you want a transition effect */
-    top: 5.375rem;
+    top: 5.2rem;/* changed from 5.375 to hide hero-skills left border to show upper gap */
   }
 
   @media only screen and (min-width: 48rem){
@@ -294,15 +294,66 @@ nav img {
 
 /* hero */
 
+#hero {
+    display: flex;
+    justify-content: space-between;
+    justify-items: stretch;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+#hero-copy {
+    padding: 5rem 1.5rem;
+}
+
+#hero-skills {
+    display: none;
+    max-height: 29rem;
+    /* padding-left: 4rem;
+    padding-right: 4rem; */
+    padding: 3rem 1.5rem;
+    /* min-width: 35rem; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-auto-rows: 0px; */
+    gap: 0;
+    /* grid-template-columns: repeat(auto-fill, 13.125rem 13.125rem); */
+    overflow: hidden;
+    flex: 0 0 fit-content;
+}
+
+#hero-skills img {
+    max-width: 13.125rem;
+}
+
 #hero .btn {
     font-size: 2rem;
     margin-top: 2.5rem;
+    
+}
+@media only screen and (min-width: 30rem){
+    #hero-copy {
+        padding: 5rem 2.5rem;
+    }
     
 }
 
 @media only screen and (min-width: 48rem){
     #hero .btn {
         display: none;
+    }
+    #hero-copy {
+        padding: 5rem 4rem;
+        border-right: 1px solid var(--clr-main-gray);
+    }   
+
+    #hero-skills {
+        display: grid;
+    }
+}
+@media only screen and (min-width: 60rem){
+    #hero-skills {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
