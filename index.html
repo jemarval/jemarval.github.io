@@ -18,14 +18,14 @@
     <title>Jose Marval - Front End Developer</title>
 </head>
 <body>
-    <nav>
+    <nav id="mobile-nav" class="mobile-nav">
         <img src="/assets/img/logo.svg" alt="Jose Marval Logo">
         <span>Jose Marval</span>
         <button id="menubtn" class="openbtn">&#9776;</button>
-        <!-- <img src="/assets/img/menuicon.svg" alt="Menu icon"> -->
     </nav>
     <div id="mySidebar" class="sidebar">
         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+        <button id="menubtn-sidebar" class="openbtn-sidebar">&#9776;</button>
         <h3><a class="side-links" href="#portfolio-offset">Portfolio</a></h3>
         <h3><a class="side-links" href="#">About me</a></h3>
         <h3><a class="side-links" href="#contact">Contact</a></h3>
@@ -33,7 +33,12 @@
       </div>
       
     <div id="main">
-
+        <nav id="desktop-nav" class="desktop-nav">
+            <div><img src="/assets/img/logo.svg" alt="Jose Marval Logo">
+                <span>Jose Marval</span>
+            </div>
+            <a href="#contact" class="btn cta">Let's talk</a>
+        </nav>    
         <section id="hero">
             <h1>Front<br>End<br><span>Developer</span></h1>
             <p>My mission is to design websites and web apps that people love. From concept and wireframing to publishing online.</p> 
