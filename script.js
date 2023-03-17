@@ -88,3 +88,32 @@ let navDisplays = () => {
 }
 window.addEventListener('resize', navDisplays)
 
+/* Test for language change */
+
+let pageLanguages = {
+  en: true,
+  es: true,
+};
+
+// Figure out the language, default to English because that's
+// what I speak.
+var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2);
+
+let heroCopyP1 = document.querySelectorAll('#hero-copy p')[0];
+let heroCopyP2 = document.querySelectorAll('#hero-copy p')[1];
+let contactButton = document.querySelector('.contactButton');
+
+let translation = {
+  es: {
+    heroCopyP1: 'Mi misión es diseñar sitios y apps web que la gente use con gusto. Desde el concepto y el maquetado hasta la publicación en línea.',
+    heroCopyP2: `Desarrollo en HTML, CSS, y JavaScript, uso GitHub para control de versiones. Aquí está <a class="link" href="">mi CV</a> en pdf.`,
+    contactButton: 'Contáctame',
+  }
+}
+
+if (/^es\b/.test(lang)) {
+  heroCopyP1.textContent = translation['es'].heroCopyP1;
+  heroCopyP2.innerHTML = translation['es'].heroCopyP2;
+  contactButton.innerHTML = translation['es'].contactButton;
+}
+
