@@ -6,6 +6,32 @@
   let desktopNav = document.getElementById('desktop-nav');
   let mobileNav = document.getElementById('mobile-nav');
   let media = window.matchMedia("(min-width: 48rem)")
+  let skills = [].slice.call(document.getElementById('hero-skills').children);
+
+/*   let ram = window.requestAnimationFrame || window.mozRequestAnimationFrame ||window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+  let position = 0;
+  let animateSkills = () => {
+    position += 1;
+    skills.forEach(skill => {
+      while()
+      skill.style.top = position + "px";
+      if(Math.abs(skill.offsetTop) > 600){
+        skill.style.top = "-572px"
+      }
+    });
+
+
+    if (Math.abs(position) >= 100){
+      position = -100;
+    }
+
+    ram(animateSkills)
+  }
+  animateSkills(); */
+
+  
+
+
 
   let openNav = () => {
     if(media.matches){
@@ -62,3 +88,4 @@
   }
   window.addEventListener('resize', navDisplays)
 //   sidebarLinks.addEventListener('click', closeNav)
+
