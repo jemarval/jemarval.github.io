@@ -140,7 +140,7 @@ let translation = {
 var lang = (navigator.language || navigator.userLanguage || 'en').substr(0, 2);
 
 // 5. Check if client's language is spanish, and if so, apply translations.
-if (/^en\b/.test(lang)) {
+if (/^es\b/.test(lang)) {
   aboutMeLink.textContent = translation['es'].aboutMeLink;
   heroCopyP1.textContent = translation['es'].heroCopyP1;
   heroCopyP2.innerHTML = translation['es'].heroCopyP2;
