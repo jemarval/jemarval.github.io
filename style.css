@@ -151,7 +151,8 @@ section {
 
 /* The sidebar menu */
 .sidebar {
-    height: calc(100% - 5.375rem);
+    height: calc(100vh - 5.375rem);
+    height: calc(100dvh - 5.375rem);
     width: 20rem;
     position: fixed;
     /* Stay in place */
@@ -243,7 +244,8 @@ section {
     .sidebar {
         left: -15rem;
         top: 0;
-        height: 100%;
+        height: 100vh;
+        height: 100dvh;
     }
 
     .openbtn-sidebar {
