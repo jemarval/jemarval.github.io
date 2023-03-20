@@ -42,6 +42,7 @@ video {
     --clr-background-gray: hsl(0, 0%, 95%);
     --clr-main-gray: hsl(0, 0%, 35%);
     --clr-dark-gray: hsl(0, 0%, 15%);
+    --shadow-box: var(--clr-main-gray) 0px 0px 0px 2px inset, var(--clr-main-gray) 10px -10px 0px -3px;
     --shadow: hsla(0, 0%, 0%, 0.15) 0px 3px 3px 0px;
     /* --section-padding : clamp(0.5rem, 3vw, 1rem) clamp(0.1rem, 3vw, 3rem); */
 }
@@ -65,18 +66,22 @@ h5 {
 h1 {
     font-size: 4.75rem;
     line-height: 0.75;
+    color: var(--clr-dark-gray);
 }
 
 h1 span {
-    text-shadow: 4px 4px 13px hsl(0deg 0% 61%);
+    text-shadow: 4px 4px 13px hsl(0deg 0% 31%);
     color: var(--clr-background-gray);
-    font-size: 2.75rem;
+    font-size: 2.625rem;
     vertical-align: top;
+    font-family: 'Fira Code';
+    line-height: 0.85;
 }
 
 h2 {
     font-size: 2rem;
     line-height: 0.70;
+    color: var(--clr-dark-gray);
 }
 
 h3 {
@@ -156,7 +161,7 @@ section {
     width: 20rem;
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 5;
     /* Stay on top */
     top: 5.375rem;
     left: -20rem;
@@ -275,7 +280,7 @@ nav {
     position: fixed;
     border-bottom: 2px solid var(--clr-main-gray);
     align-items: center;
-    z-index: 5;
+    z-index: 10;
     background-color: var(--clr-background-gray);
     box-shadow: var(--shadow);
     transition: .5s;
@@ -362,9 +367,7 @@ nav img {
     padding: 5rem 1.5rem;
 }
 
-#hero img { 
-    /* !! Only while skills carousel is finished */
-    /* !! Delete afterwards, including hero-bg img from html */
+#hero img {
     position: absolute;
     z-index: -1;
     right: 0;
@@ -508,6 +511,7 @@ nav img {
 #contact h2 {
     font-size: 2.375rem;
     line-height: 1;
+    color: var(--clr-background-gray);
 }
 
 #contact a.btn {
@@ -549,86 +553,74 @@ footer p {
 }
 
 
-/* media queries breaks to consider:
-767:
- tablet, add left side bar, change contact button from hero to nav
+/* ABOUT ME PAGE */
+/* ------------- */
 
-991 make contact dark background a fixed width centered
-add right side column with skills to hero
- */
-
-
-
-
- #intro {
-   border: none;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 4rem;
-   justify-content: space-between;
- }
+/* Introduction */
+#intro {
+    /* border: none; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4rem;
+    justify-content: space-between;
+}
 
 #intro-copy h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 3rem;
     line-height: 1.2;
+    color: var(--clr-dark-gray);
 }
 
-/*  #intro-img {
-    display: none;
-    width: 15rem;
-    position: relative;
-    padding-left: 2rem;
- } */
+#intro-copy img {
+    max-width: 80%;
+    margin: 1rem 0;
+}
 
-/*  #intro-img img {
-    object-fit: cover;
-    height: 100%;
- } */
-
- /* ABOUTME: Skills */
-
- #skills {
+#skills {
     padding-top: 0;
     position: relative;
-    top: 2.5rem;
-    padding-right: 2.5rem;
- }
+    left: -2rem;
+    width: fit-content;
+}
 
- .code-title {
+.code-title {
     font-family: "Fira Mono", monospace;
     color: var(--clr-background-gray);
     position: relative;
-    z-index: 5;
+    z-index: 2;
     padding: 1rem 2rem;
     border: 1px solid var(--clr-main-gray);
-    width: fit-content;    
+    width: fit-content;
     background-color: var(--clr-main-gray);
- }
+}
 
 .color-code {
     color: rgb(110, 55, 110);
     color: #57eaea;
- }
+}
 
- #skills-list {
+#skills-list {
     width: fit-content;
-    padding: 2rem;
+    padding: 1.5rem;
     box-shadow: var(--clr-main-gray) 0px 0px 0px 2px inset, var(--clr-main-gray) 10px -10px 0px -3px;
     position: relative;
     left: 2rem;
     top: -1rem;
- }
+}
 
- .close-tag {
+.close-tag {
     position: relative;
-    right: -90%;
-    bottom: 10%;
+    right: -16rem;
+    bottom: 3rem;
     margin: 0;
     display: block;
- }
+}
 
- #skills-list div {
+#skills-list div {
     display: flex;
     font-family: 'Fira Mono', monospace;
     font-weight: 500;
@@ -636,72 +628,108 @@ add right side column with skills to hero
     align-items: center;
     margin: 1rem auto;
 
- }
+}
 
- #skills-list p {
+#skills-list p {
     margin: 0;
- }
+}
 
- #skills-list p span {
+#skills-list p span {
     opacity: 0.4;
- }
+}
 
- #skills-list img {
+#skills-list img {
     width: 2rem;
     margin-right: 1rem;
- }
+}
 
- @media only screen and (min-width: 48rem){
+@media only screen and (min-width: 55rem) {
+    #intro {
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 8rem;
+        align-items: baseline;
+    }
+
     #intro-copy {
-        /* max-width: calc(50% - 2.5rem); */
         flex: 1;
     }
- }
 
- /* ABOUTME: Hobbies */
+    #skills {
+        top: 8rem;
+    }
+}
 
- #hobbies {
-    padding-top: 0;
- }
 
- #hobbies>div {
+/* ABOUTME: Education */
+
+#education>h2,
+#hobbies>h2 {
+    line-height: 0.8;
+    margin-bottom: 3rem;
+    color: var(--clr-dark-gray);
+
+}
+
+.certification {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.certification img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.certification-copy h3 {
+    color: var(--clr-main-gray);
+    border-bottom: 1px solid var(--clr-main-gray);
+    
+    line-height: 1.1;
+}
+
+.certification-copy p {
+    margin-top: 0;
+    line-height: 0.5;
+    font-size: 0.85rem;
+    font-family: 'Beckman';
+}
+
+/* ABOUTME: Hobbies */
+
+#hobbies>div {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     row-gap: 3rem;
- }
+}
 
- #hobbies img {
+#hobbies img {
     border: 1px solid var(--clr-main-gray);
     padding: 0.5rem;
     margin-top: 1rem;
-    
+
     object-fit: cover;
 }
 
- .hobbies img {
+.hobbies img {
     aspect-ratio: 1/1;
     object-fit: cover;
- }
+}
 
-
- #hobbies h2 {
-    line-height: 0.8;
-    margin-bottom: 3rem;
-
- }
- #hobbies h3 {
+#hobbies h3 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin-bottom: 0.5rem;
- }
+}
 
- #hobby-photo div {
+#hobby-photo div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
- }
+}
 
-@media only screen and (min-width: 30rem){
+@media only screen and (min-width: 30rem) {
     #hobby-photo div img {
         max-width: calc(50% - 0.5rem);
         flex: 1;
@@ -709,5 +737,5 @@ add right side column with skills to hero
 
     .hobbies {
         max-width: calc(50% - 1rem);
-     }
+    }
 }
