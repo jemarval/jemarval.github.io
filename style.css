@@ -556,3 +556,139 @@ footer p {
 991 make contact dark background a fixed width centered
 add right side column with skills to hero
  */
+
+
+
+
+ #intro {
+   border: none;
+   display: flex;
+ }
+
+#intro-copy h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+ #intro-img {
+    display: none;
+    width: 15rem;
+    position: relative;
+    padding-left: 2rem;
+ }
+
+ #intro-img img {
+    object-fit: cover;
+    height: 100%;
+ }
+
+ /* ABOUTME: Skills */
+
+ #skills {
+    padding-top: 0;
+ }
+
+ .code-title {
+    font-family: "Fira Mono", monospace;
+    color: var(--clr-background-gray);
+    position: relative;
+    z-index: 5;
+    padding: 1rem 2rem;
+    border: 1px solid var(--clr-main-gray);
+    width: fit-content;    
+    background-color: var(--clr-dark-gray);
+ }
+
+.color-code {
+    color: rgb(110, 55, 110);
+    color: #57eaea;
+ }
+
+ #skills-list {
+    width: fit-content;
+    padding: 2rem;
+    box-shadow: var(--clr-main-gray) 0px 0px 0px 2px inset, var(--clr-main-gray) 10px -10px 0px -3px;
+    position: relative;
+    left: 2rem;
+    top: -1rem;
+ }
+
+ #skills-list div:last-of-type {
+    position: relative;
+    right: -90%;
+    bottom: 0;
+    margin: 0;
+    display: block;
+ }
+
+ #skills-list div {
+    display: flex;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 1rem auto;
+
+ }
+
+ #skills-list p {
+    margin: 0;
+ }
+
+ #skills-list p span {
+    opacity: 0.4;
+ }
+
+ #skills-list img {
+    width: 2rem;
+    margin-right: 1rem;
+ }
+
+ /* ABOUTME: Hobbies */
+
+ #hobbies>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 3rem;
+ }
+
+ #hobbies img {
+    border: 1px solid var(--clr-main-gray);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    
+    object-fit: cover;
+}
+
+ .hobbies img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+ }
+
+
+ #hobbies h2 {
+    line-height: 0.8;
+    margin-bottom: 3rem;
+
+ }
+ #hobbies h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 0.5rem;
+ }
+
+ #hobby-photo div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+ }
+
+@media only screen and (min-width: 30rem){
+    #hobby-photo div img {
+        max-width: calc(50% - 0.5rem);
+        flex: 1;
+    }
+
+    .hobbies {
+        max-width: calc(50% - 1rem);
+     }
+}
