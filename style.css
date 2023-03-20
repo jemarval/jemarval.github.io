@@ -563,28 +563,36 @@ add right side column with skills to hero
  #intro {
    border: none;
    display: flex;
+   flex-wrap: wrap;
+   gap: 4rem;
+   justify-content: space-between;
  }
 
 #intro-copy h2 {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
 }
 
- #intro-img {
+/*  #intro-img {
     display: none;
     width: 15rem;
     position: relative;
     padding-left: 2rem;
- }
+ } */
 
- #intro-img img {
+/*  #intro-img img {
     object-fit: cover;
     height: 100%;
- }
+ } */
 
  /* ABOUTME: Skills */
 
  #skills {
     padding-top: 0;
+    position: relative;
+    top: 2.5rem;
+    padding-right: 2.5rem;
  }
 
  .code-title {
@@ -595,7 +603,7 @@ add right side column with skills to hero
     padding: 1rem 2rem;
     border: 1px solid var(--clr-main-gray);
     width: fit-content;    
-    background-color: var(--clr-dark-gray);
+    background-color: var(--clr-main-gray);
  }
 
 .color-code {
@@ -612,10 +620,10 @@ add right side column with skills to hero
     top: -1rem;
  }
 
- #skills-list div:last-of-type {
+ .close-tag {
     position: relative;
     right: -90%;
-    bottom: 0;
+    bottom: 10%;
     margin: 0;
     display: block;
  }
@@ -643,7 +651,18 @@ add right side column with skills to hero
     margin-right: 1rem;
  }
 
+ @media only screen and (min-width: 48rem){
+    #intro-copy {
+        /* max-width: calc(50% - 2.5rem); */
+        flex: 1;
+    }
+ }
+
  /* ABOUTME: Hobbies */
+
+ #hobbies {
+    padding-top: 0;
+ }
 
  #hobbies>div {
     display: flex;
