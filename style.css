@@ -376,27 +376,6 @@ nav img {
     opacity: 0.3;
 }
 
-#hero-skills {
-    display: none;
-    max-height: 29rem;
-    /* padding-left         : 4rem;
-    padding-right           : 4rem; */
-    padding: 3rem 1.5rem;
-    /* min-width            : 35rem; */
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* grid-auto-rows       : 0px; */
-    gap: 0;
-    /* grid-template-columns: repeat(auto-fill, 13.125rem 13.125rem); */
-    overflow: hidden;
-    flex: 0 0 fit-content;
-}
-
-#hero-skills img {
-    max-width: 13.125rem;
-    position: relative;
-}
-
 #hero .btn {
     margin-top: 2.5rem;
 
@@ -417,16 +396,6 @@ nav img {
     #hero-copy {
         padding: 5rem 4rem;
         /* border-right: 1px solid var(--clr-main-gray); */
-    }
-
-    #hero-skills {
-        display: grid;
-    }
-}
-
-@media only screen and (min-width: 60rem) {
-    #hero-skills {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -620,6 +589,10 @@ footer p {
     display: block;
 }
 
+.close-tag h2 {    
+    color: var(--clr-background-gray);
+}
+
 #skills-list div {
     display: flex;
     font-family: 'Fira Mono', monospace;
@@ -683,10 +656,9 @@ footer p {
 }
 
 .certification-copy h3 {
-    color: var(--clr-main-gray);
-    border-bottom: 1px solid var(--clr-main-gray);
-    
+    color: var(--clr-main-gray);    
     line-height: 1.1;
+    text-decoration: underline;
 }
 
 .certification-copy p {
