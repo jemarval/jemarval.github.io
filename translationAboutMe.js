@@ -48,7 +48,7 @@ let translation = {
       <p>Desde niño siento interés por la programación, la web y la computación en general. En ese entonces me auto enseñaba a diseñar sitios web por diversión, usando Macromedia Dreamweaver 2.0. Cuando encuentro algo que no sé hacer, tengo la habilidad de encontrar cómo hacerlo.</p>
       <img src="/assets/img/dw.gif" alt="">
       <p>Soy también graduado Ingeniero Civil, analista estructural, y un ávido aprendiz de tecnologías de desarrollo web y móvil profesional.</p>
-      <p class="focus">Me gustaría ayudarte en tu proyecto y ser parte de tu equipo. <br> <a href="https://wa.me/56984186986" target="_blank">llámame o escribeme por WhatsApp</a> o <a href="mailto:jemarval@gmail.com">envíame un email</a> y lo coordinamos.</p>`,
+      <p class="focus">Me gustaría ayudarte en tu proyecto y ser parte de tu equipo. <br> <a href="https://wa.me/56984186986" target="_blank">Llámame o escribeme por WhatsApp</a> o <a href="mailto:jemarval@gmail.com">envíame un email</a> y lo coordinamos.</p>`,
         fullStackDate: 'Actual',
         civilEngineerCopy: `<h3>Ingeniero Civil</h3>
       <h4>Instituto Politécnico Santiago Marino</h4>
