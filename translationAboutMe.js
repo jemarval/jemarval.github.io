@@ -64,7 +64,7 @@ let translation = {
 var lang = (navigator.language || navigator.userLanguage || 'es').substr(0, 2);
 
 // 5. Check if client's language is spanish, and if so, apply translations.
-if (/^en\b/.test(lang)) {
+if (/^es\b/.test(lang)) {
     homeLink.textContent = translation['es'].homeLink;
     aboutMeLink.textContent = translation['es'].aboutMeLink;
     contactButton.forEach(button => { button.textContent = translation['es'].contactButton });
