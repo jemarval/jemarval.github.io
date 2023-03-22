@@ -90,6 +90,7 @@ let closeModal = () => {
   body.style.overflow = 'auto';
   body.style.height = 'auto';
   modal.style.display = 'none';
+  projects[id].style.display = 'none';
 }
 
 closeModalBtn.addEventListener('click', closeModal);
