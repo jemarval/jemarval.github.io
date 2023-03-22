@@ -49,6 +49,10 @@ video {
 
 /* UTILITY CLASSES */
 
+.border {
+    border: 1px solid var(--clr-main-gray);
+}
+
 /* ----------------------------------- */
 /* ----------- Main Styles ----------- */
 
@@ -101,7 +105,6 @@ p {
 p.focus {
     font-weight: 600;
     color: var(--clr-dark-gray);
-    border: 1px solid var(--clr-main-gray);
     padding: 1rem;
     width: fit-content;
 }
@@ -426,7 +429,6 @@ nav img {
 }
 
 .card {
-    border: 1px solid var(--clr-main-gray);
     flex: 1 1 22rem;
     padding-right: 3rem;
     box-shadow: var(--shadow);
@@ -515,20 +517,6 @@ footer {
     background-color: var(--clr-background-gray);
 }
 
-.footer-icons {
-    border-bottom: 1px solid var(--clr-main-gray);
-    width: clamp(15rem, 80%, 22rem);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-}
-
-.footer-icons img {
-    margin: 0 1rem;
-
-}
-
 footer p {
     margin: auto;
     text-align: center;
@@ -552,8 +540,41 @@ footer p {
     overflow-y: auto;
     background: var(--clr-background-gray);
     box-shadow: var(--shadow-box);
-    padding: 6.875rem 20dvw;
+    padding: 5rem 8dvw;
 }
+
+.project-modal-navigation {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 5; 
+}
+
+.next-modal-btn,
+.previous-modal-btn {
+    color: hsla(0, 0%, 35%, 0.5);
+}
+
+#project-modal button {
+    font-size: 2.5rem;
+    line-height: 1;
+    background-color: var(--clr-background-gray);
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.close-modal-btn {
+    position: fixed;
+    color: var(--clr-main-gray);
+    right: 2rem;
+    top: 1.5rem;
+}
+
 #project-modal section {
     padding: 0;
     border: none;
@@ -561,7 +582,6 @@ footer p {
 }
 
 #project-modal h2 {
-    font-size: 3.75rem;
     letter-spacing: -1px;
     line-height: 0.85;
     margin-bottom: 3rem;
@@ -569,15 +589,8 @@ footer p {
 
 #project-modal h3 {
     font-size: 1rem;
-    margin-bottom: 0;
-    margin-top: 1.25rem;
-}
-
-.close-modal-btn {
-    font-size: 3.5rem;
-    position: absolute;
-    top: -2rem;
-    right: 2rem;
+    margin-bottom: -1rem;
+    margin-top: 2rem;
 }
 
 #project-modal img {
@@ -585,11 +598,95 @@ footer p {
     margin: auto;
 }
 
-/* !!only to prevent double scrolling. Inject this through Js  
+.screen-gallery {
+    margin: 3rem auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.span-6 {
+    grid-column: span 6;
+}
+
+.span-4 {
+    grid-column: span 6;
+    padding: 0 2rem;
+}
+
+.span-3 {
+    grid-column: span 6;
+    padding: 0 2rem;
+}
+
+@media only screen and (min-width: 48rem){
+
+    .span-3 {
+        grid-column: span 3;
+        padding: 0;
+    }
+
+    .span-3:nth-of-type(odd) {
+        padding-left: 2rem;
+    }
+
+    .span-3:nth-of-type(even) {
+        padding-right: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 60rem){
+    #project-modal {
+        padding: 6.875rem 20dvw;
+    }
+
+    #project-modal h2 {
+    font-size: 3.75rem;
+    }
+
+    .screen-gallery {
+        column-gap: 2rem;
+    }
+    
+    .span-4 {
+        grid-column: 2 / 6;
+    }
+
+    .project-modal-navigation {
+        left: 2rem;
+        bottom: 50dvh;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.modal-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    bottom: -4rem;
+    border-top: 1px solid var(--clr-main-gray);
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* !!only to prevent double scrolling. Inject this through Js  */
 body {
     overflow:hidden;
     height: 100%;
-!!} */
+}
+
+/* #mobile-nav,
+#mySidebar,
+#main {
+    display: none;
+}
+ */
+/* !!--------- */
 
 /* ------------------------------------------------ */
 
@@ -633,7 +730,6 @@ body {
     position: relative;
     z-index: 2;
     padding: 1rem 2rem;
-    border: 1px solid var(--clr-main-gray);
     width: fit-content;
     background-color: var(--clr-main-gray);
 }
