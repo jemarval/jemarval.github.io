@@ -389,7 +389,9 @@ nav img {
     right: 0;
     top: 0;
     height: 100%;
-    opacity: 0.3;
+    opacity: 0.2;
+    object-fit: cover;
+    object-position: left;
 }
 
 #hero .btn {
@@ -526,7 +528,7 @@ footer p {
 /* ------------- */
 
 #project-modal {
-    
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -564,7 +566,6 @@ footer p {
     width: 3rem;
     height: 3rem;
     padding-bottom: 1rem;
-    border-radius: 50%;
     z-index: 5;
 }
 
@@ -584,13 +585,26 @@ footer p {
 #project-modal h2 {
     letter-spacing: -1px;
     line-height: 0.85;
-    margin-bottom: 3rem;
 }
 
 #project-modal h3 {
+    font-family: 'Beckman book', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    padding-left: 0.3rem;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+}
+
+#project-modal h4 {
     font-size: 1rem;
     margin-bottom: -1rem;
-    margin-top: 2rem;
+}
+
+#project-modal p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 #project-modal img {
@@ -675,10 +689,10 @@ footer p {
 }
 
 /* !!only to prevent double scrolling. Inject this through Js  */
-body {
+/* body {
     overflow:hidden;
     height: 100%;
-}
+} */
 
 /* #mobile-nav,
 #mySidebar,
