@@ -474,14 +474,16 @@ nav img {
 
 }
 
-.project-link a {
-    text-decoration: none;
+.project-link button {
     color: var(--clr-main-gray);
     font-size: 0.875rem;
     font-family: 'Beckman', sans-serif;
+    font-weight: 600;
+    color: var(--clr-dark-gray);
+    cursor: pointer;
 }
 
-.project-link a:after {
+.project-link button:after {
     content: ' \2794';
 }
 
@@ -554,8 +556,8 @@ footer p {
     z-index: 5; 
 }
 
-.next-modal-btn,
-.previous-modal-btn {
+#next-modal-btn,
+#previous-modal-btn {
     color: hsla(0, 0%, 35%, 0.5);
 }
 
@@ -566,10 +568,11 @@ footer p {
     width: 3rem;
     height: 3rem;
     padding-bottom: 1rem;
-    z-index: 5;
+    z-index: 5;    
+    cursor: pointer;
 }
 
-.close-modal-btn {
+#close-modal-btn {
     position: fixed;
     color: var(--clr-main-gray);
     right: 2rem;
@@ -577,6 +580,7 @@ footer p {
 }
 
 #project-modal section {
+    display: none;
     padding: 0;
     border: none;
     position: relative;

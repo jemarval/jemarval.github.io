@@ -1,5 +1,4 @@
-
-
+/* Navigation */
 let menubtn = document.getElementById('menubtn');
 let menubtnSidebar = document.getElementById('menubtn-sidebar');
 let mySidebar = document.getElementById('mySidebar');
@@ -15,7 +14,6 @@ let openNav = () => {
   }
   mySidebar.style.left = '0';
   main.style.left = '20rem';
-
   menubtn.innerHTML = "&#10005;";
   menubtnSidebar.innerHTML = "&#10005;";
   menubtn.addEventListener('click', closeNav)
@@ -26,7 +24,6 @@ let openNav = () => {
 
 menubtn.addEventListener('click', openNav)
 menubtnSidebar.addEventListener('click', openNav)
-
 
 let closeNav = () => {
   if (media.matches) {
@@ -62,5 +59,58 @@ let navDisplays = () => {
   }
   closeNav();
 }
+
 window.addEventListener('resize', navDisplays);
 
+/* --------------------- */
+/* Project Detail Modals */
+let body = document.body;
+let modal = document.querySelector('#project-modal');
+let projects = document.querySelectorAll('#project-modal section');
+let projectLink = document.querySelectorAll('.project-link button');
+let closeModalBtn = document.getElementById('close-modal-btn');
+let nextProjectBtn = document.getElementById('next-modal-btn');
+let previousProjectBtn = document.getElementById('previous-modal-btn');
+
+// modal[0].style.display = 'block';
+
+let id;
+
+let openModal = event => {
+  body.style.overflow = 'hidden';
+  body.style.height = '100%';
+  id = event.target.dataset.projectid;
+  modal.style.display = 'block';
+  projects[id].style.display = 'block';
+}
+
+projectLink.forEach(link => link.addEventListener('click', openModal))
+
+let closeModal = () => {
+  body.style.overflow = 'auto';
+  body.style.height = 'auto';
+  modal.style.display = 'none';
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+
+
+let nextProject = () => {
+  projects[id].style.display = 'none';
+  if (id === projects.length - 1) {
+    id = 0;
+  } else { id++ }
+  projects[id].style.display = 'block'
+}
+
+nextProjectBtn.addEventListener('click', nextProject);
+
+let previousProject = () => {
+  projects[id].style.display = 'none';
+  if (id === 0) {
+    id = projects.length - 1;
+  } else { id-- };
+  projects[id].style.display = 'block'
+}
+
+previousProjectBtn.addEventListener('click', previousProject);
