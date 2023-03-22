@@ -34,7 +34,7 @@ let pageLanguages = {
       heroCopyP2: `Hago wireframing y prototipos con Figma. Desarrollo en HTML, CSS, y JavaScript. Uso GitHub para control de versiones. Aquí está <a class="link" href="/assets/img/josemarval_frontend_es.pdf">mi CV</a> descargable en pdf.`,
       contactButton: "Contáctame",
       portfolioTitle: "Galería",
-      portfolioCopy: "Estos son algunos de mis ultimos trabajos:",
+      portfolioCopy: "Estos son algunos de mis últimos trabajos:",
       projectCopy1: "Web app de renovación de planos de projecto para la industria de la construcción.",
       projectCopy2: "Landing page con formulario de contacto para empresa de diseño de sistemas (en curso).",
       projectCopy3: "Landing page con calendario de agendamiento para empresa de mejoras automotrices (en curso).",
