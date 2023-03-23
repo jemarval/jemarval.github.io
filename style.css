@@ -39,9 +39,14 @@ video {
 /* ADJUST AS NEEDED - ASSIGN AS NECCESARY */
 
 :root {
-    --clr-background-gray: hsl(0, 0%, 95%);
+    /* --clr-background-gray: hsl(0, 0%, 95%);
     --clr-main-gray: hsl(0, 0%, 35%);
-    --clr-dark-gray: hsl(0, 0%, 15%);
+    --clr-dark-gray: hsl(0, 0%, 15%); */
+    --clr-background-gray: hsl(220, 20%, 95%);
+    --clr-main-gray: hsl(220, 15%, 35%);
+    --clr-dark-gray: hsl(220, 20%, 15%);
+    --clr-dark-hover: hsl(221, 33%, 19%);
+    --clr-light-blue: hsl(220, 100%, 60%);
     --shadow-box: var(--clr-main-gray) 0px 0px 0px 2px inset, var(--clr-main-gray) 10px -10px 0px -3px;
     --shadow: hsla(0, 0%, 0%, 0.15) 0px 3px 3px 0px;
     /* --section-padding : clamp(0.5rem, 3vw, 1rem) clamp(0.1rem, 3vw, 3rem); */
@@ -109,6 +114,10 @@ p.focus {
     width: fit-content;
 }
 
+button {
+    background-color: var(--clr-background-gray);
+}
+
 /* anchor link offsets */
 
 #main-offset,
@@ -125,6 +134,7 @@ p.focus {
 a {
     font-weight: 600;
     color: var(--clr-dark-gray);
+    transition-duration: 0.3s;
 }
 
 a.btn {
@@ -140,6 +150,10 @@ a.btn {
 
 a.btn img {
     display: inline-block;
+}
+
+p>a:hover {
+    color: var(--clr-light-blue);
 }
 
 .cta {
@@ -242,6 +256,7 @@ section {
 .openbtn:hover {
     color: var(--clr-dark-gray);
     scale: 1.05;
+    transform: rotate(90deg);
 }
 
 .openbtn-sidebar {
@@ -259,6 +274,7 @@ section {
 
 .openbtn-sidebar:hover {
     scale: 1.05;
+    transform: rotate(90deg);
 }
 
 @media only screen and (min-width: 48rem) {
@@ -334,7 +350,12 @@ nav.desktop-nav>a {
     height: 100%;
     bottom: 0;
     line-height: 2.6875rem;
+    transition: 0.3s;
 }
+nav.desktop-nav>a:hover {
+    background: var(--clr-dark-hover);
+}
+
 
 nav span {
     font-family: 'Beckman', sans-serif;
@@ -399,6 +420,11 @@ nav img {
 
 }
 
+#hero .btn:hover {
+    background: var(--clr-dark-hover);
+    scale: 1.01;
+}
+
 @media only screen and (min-width: 30rem) {
     #hero-copy {
         padding: 5rem 2.5rem;
@@ -444,8 +470,8 @@ nav img {
 }
 
 .card-img img {
-    aspect-ratio: 1.45/1;
-    object-fit: cover;
+    aspect-ratio: 1.5/1;
+    object-fit: contain;
 }
 
 .card-content {
@@ -481,10 +507,15 @@ nav img {
     font-weight: 600;
     color: var(--clr-dark-gray);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .project-link button:after {
     content: ' \2794';
+}
+
+.project-link button:hover {
+    color: var(--clr-light-blue);
 }
 
 /* contact */
@@ -506,11 +537,23 @@ nav img {
     font-size: 1.5rem;
     border: 1px solid var(--clr-background-gray);
     margin: 2.5rem auto 0.5rem;
+    transition: 0.3s;
+}
+
+#contact a.btn:hover {
+    /* border: 1px solid var(--clr-light-blue); */
+    background: var(--clr-dark-hover);
+    scale: 1.01;
 }
 
 #contact h4 a {
     color: var(--clr-background-gray);
     opacity: 0.8;
+    transition: 0.3s;
+}
+
+#contact h4 a:hover {
+    opacity: 1;
 }
 
 /* footer */
@@ -561,6 +604,12 @@ footer p {
     color: hsla(0, 0%, 35%, 0.5);
 }
 
+#next-modal-btn:hover,
+#previous-modal-btn:hover {
+    scale: 1.05;
+    color: var(--clr-dark-gray);
+} 
+
 #project-modal button {
     font-size: 2.5rem;
     line-height: 1;
@@ -570,6 +619,7 @@ footer p {
     padding-bottom: 1rem;
     z-index: 5;    
     cursor: pointer;
+    transition: 0.3s;
 }
 
 #close-modal-btn {
@@ -577,6 +627,14 @@ footer p {
     color: var(--clr-main-gray);
     right: 2rem;
     top: 1.5rem;
+    transition: 0.3s;
+}
+
+#close-modal-btn:hover {
+    color: var(--clr-dark-gray);
+    scale: 1.05;
+    background-color: var(--clr-light-blue);
+    color: var(--clr-background-gray);
 }
 
 #project-modal section {
@@ -609,6 +667,10 @@ footer p {
     font-size: 0.875rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+}
+
+#project-modal .card-tags {
+    padding-left: 0.5rem;
 }
 
 #project-modal img {

@@ -82,6 +82,7 @@ let openModal = event => {
   id = event.target.dataset.projectid;
   modal.style.display = 'block';
   projects[id].style.display = 'block';
+  modal.scrollTo(0,0);
 }
 
 projectLink.forEach(link => link.addEventListener('click', openModal))
@@ -98,20 +99,22 @@ closeModalBtn.addEventListener('click', closeModal);
 
 let nextProject = () => {
   projects[id].style.display = 'none';
-  if (id === projects.length - 1) {
+  if (id >= projects.length - 1) {
     id = 0;
   } else { id++ }
-  projects[id].style.display = 'block'
+  projects[id].style.display = 'block';
+  modal.scrollTo(0,0);
 }
 
 nextProjectBtn.addEventListener('click', nextProject);
 
 let previousProject = () => {
   projects[id].style.display = 'none';
-  if (id === 0) {
+  if (id <= 0) {
     id = projects.length - 1;
   } else { id-- };
-  projects[id].style.display = 'block'
+  projects[id].style.display = 'block';
+  modal.scrollTo(0,0);
 }
 
 previousProjectBtn.addEventListener('click', previousProject);
