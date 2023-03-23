@@ -118,3 +118,6 @@ let previousProject = () => {
 }
 
 previousProjectBtn.addEventListener('click', previousProject);
+
+/* Sal animations */
+sal();
