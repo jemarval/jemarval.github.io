@@ -39,14 +39,15 @@ video {
 /* ADJUST AS NEEDED - ASSIGN AS NECCESARY */
 
 :root {
-    /* --clr-background-gray: hsl(0, 0%, 95%);
+    /*     --clr-background-gray: hsl(0, 0%, 95%);
     --clr-main-gray: hsl(0, 0%, 35%);
     --clr-dark-gray: hsl(0, 0%, 15%); */
     --clr-background-gray: hsl(220, 20%, 95%);
     --clr-main-gray: hsl(220, 15%, 35%);
     --clr-dark-gray: hsl(220, 20%, 15%);
-    --clr-dark-hover: hsl(221, 33%, 19%);
+    --clr-dark-hover: hsl(220, 35%, 20%);
     --clr-light-blue: hsl(220, 100%, 60%);
+    --clr-light-blue: hsl(210, 100%, 65%);
     --shadow-box: var(--clr-main-gray) 0px 0px 0px 2px inset, var(--clr-main-gray) 10px -10px 0px -3px;
     --shadow: hsla(0, 0%, 0%, 0.15) 0px 3px 3px 0px;
     /* --section-padding : clamp(0.5rem, 3vw, 1rem) clamp(0.1rem, 3vw, 3rem); */
@@ -352,6 +353,7 @@ nav.desktop-nav>a {
     line-height: 2.6875rem;
     transition: 0.3s;
 }
+
 nav.desktop-nav>a:hover {
     background: var(--clr-dark-hover);
 }
@@ -453,7 +455,7 @@ nav img {
     margin-top: 2.5rem;
     gap: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
 }
 
 .card {
@@ -573,15 +575,15 @@ footer p {
 /* ------------- */
 
 #project-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-  height: 100%;
-  /* 
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 100%;
+    /* 
     max-height: 95%;
     max-width: 95%; */
     overflow-y: auto;
@@ -596,7 +598,7 @@ footer p {
     bottom: 2rem;
     display: flex;
     flex-direction: column;
-    z-index: 5; 
+    z-index: 5;
 }
 
 #next-modal-btn,
@@ -608,7 +610,7 @@ footer p {
 #previous-modal-btn:hover {
     scale: 1.05;
     color: var(--clr-dark-gray);
-} 
+}
 
 #project-modal button {
     font-size: 2.5rem;
@@ -617,7 +619,7 @@ footer p {
     width: 3rem;
     height: 3rem;
     padding-bottom: 1rem;
-    z-index: 5;    
+    z-index: 5;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -671,6 +673,7 @@ footer p {
 
 #project-modal .card-tags {
     padding-left: 0.5rem;
+    margin-top: 1rem;
 }
 
 #project-modal img {
@@ -700,7 +703,7 @@ footer p {
     padding: 0 2rem;
 }
 
-@media only screen and (min-width: 48rem){
+@media only screen and (min-width: 48rem) {
 
     .span-3 {
         grid-column: span 3;
@@ -717,19 +720,19 @@ footer p {
 
 }
 
-@media only screen and (min-width: 60rem){
+@media only screen and (min-width: 60rem) {
     #project-modal {
         padding: 6.875rem 20dvw;
     }
 
     #project-modal h2 {
-    font-size: 3.75rem;
+        font-size: 3.75rem;
     }
 
     .screen-gallery {
         column-gap: 2rem;
     }
-    
+
     .span-4 {
         grid-column: 2 / 6;
     }
@@ -815,8 +818,7 @@ footer p {
 }
 
 .color-code {
-    color: rgb(110, 55, 110);
-    color: #57eaea;
+    color: var(--clr-light-blue)
 }
 
 #skills-list {
@@ -836,7 +838,7 @@ footer p {
     display: block;
 }
 
-.close-tag h2 {    
+.close-tag h2 {
     color: var(--clr-background-gray);
 }
 
@@ -903,7 +905,7 @@ footer p {
 }
 
 .certification-copy h3 {
-    color: var(--clr-main-gray);    
+    color: var(--clr-main-gray);
     line-height: 1.1;
     text-decoration: underline;
 }

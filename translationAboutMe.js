@@ -41,7 +41,7 @@ let translation = {
         contactCopy: `Cualquier consulta que tengas, llámame o escribeme al whatsapp.<br> Feliz de ayudar.`,
         contactSectionButton: "contáctame",
         contactEmail: "O envíame un email",
-        cvDownload: `<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32" height="64" viewBox="0 0 32 64" fill="#57eaea"><path d="M29.7,0H2.4C1.1,0,.05,2.57.05,5.73V58.27C.05,61.43,1.1,64,2.4,64H29.7c1.3,0,2.35-2.57,2.35-5.73V5.73C32.05,2.57,31,0,29.7,0ZM11.89,10.56,14.45,13V6.4h3.2V13l2.56-2.48,2.24,2.24-6.4,6.4-6.4-6.4ZM20,53.37a6.13,6.13,0,0,1-8.6,0,6.16,6.16,0,0,1-.17-8.59l.3-.32,2.23,2.12-.29.31a3.06,3.06,0,1,0,4.44,0l-.3-.31,2.23-2.12.3.31A6.15,6.15,0,0,1,20,53.37ZM9.55,43.21V39.86l5.23-2.25L9.55,35.35V32l13,5.62ZM24.05,24h-16V20.8h16Z"/></svg>`,
+        cvDownload: `<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="32" height="64" viewBox="0 0 32 64" fill="var(--clr-light-blue)"><path d="M29.7,0H2.4C1.1,0,.05,2.57.05,5.73V58.27C.05,61.43,1.1,64,2.4,64H29.7c1.3,0,2.35-2.57,2.35-5.73V5.73C32.05,2.57,31,0,29.7,0ZM11.89,10.56,14.45,13V6.4h3.2V13l2.56-2.48,2.24,2.24-6.4,6.4-6.4-6.4ZM20,53.37a6.13,6.13,0,0,1-8.6,0,6.16,6.16,0,0,1-.17-8.59l.3-.32,2.23,2.12-.29.31a3.06,3.06,0,1,0,4.44,0l-.3-.31,2.23-2.12.3.31A6.15,6.15,0,0,1,20,53.37ZM9.55,43.21V39.86l5.23-2.25L9.55,35.35V32l13,5.62ZM24.05,24h-16V20.8h16Z"/></svg>`,
         cvDownloadLinkES: "/assets/img/josemarval_frontend_es.pdf",
         introCopyHtml: `<h2>Sobre mi</h2>
       <p>Soy desarrollador Front-end, cursando  actualmente ingeniería Full Stack. Me gusta trabajar en equipo para lograr diseños funcionales y visualmente atractivos.</p>
