@@ -153,8 +153,10 @@ a.btn img {
     display: inline-block;
 }
 
-p>a:hover {
-    color: var(--clr-light-blue);
+@media (hover: hover) {
+    p>a:hover {
+        color: var(--clr-light-blue);
+    }
 }
 
 .cta {
@@ -235,14 +237,16 @@ section {
     transition: 0.3s;
 }
 
+@media (hover: hover) {
 
-#sidebar-icons svg:hover {
-    fill: var(--clr-background-gray);
-    scale: 1.05;
-}
+    #sidebar-icons svg:hover {
+        fill: var(--clr-background-gray);
+        scale: 1.05;
+    }
 
-.sidebar a:hover {
-    text-decoration: underline;
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
 }
 
 .openbtn {
@@ -254,10 +258,12 @@ section {
     transition: .3s;
 }
 
+@media (hover: hover){
 .openbtn:hover {
     color: var(--clr-dark-gray);
     scale: 1.05;
     transform: rotate(90deg);
+}
 }
 
 .openbtn-sidebar {
@@ -273,9 +279,11 @@ section {
     transition: .3s;
 }
 
+@media (hover: hover){
 .openbtn-sidebar:hover {
     scale: 1.05;
     transform: rotate(90deg);
+}
 }
 
 @media only screen and (min-width: 48rem) {
@@ -354,10 +362,11 @@ nav.desktop-nav>a {
     transition: 0.3s;
 }
 
+@media (hover: hover){
 nav.desktop-nav>a:hover {
     background: var(--clr-dark-hover);
 }
-
+}
 
 nav span {
     font-family: 'Beckman', sans-serif;
@@ -422,9 +431,11 @@ nav img {
 
 }
 
+@media (hover: hover){
 #hero .btn:hover {
     background: var(--clr-dark-hover);
     scale: 1.01;
+}
 }
 
 @media only screen and (min-width: 30rem) {
@@ -516,8 +527,10 @@ nav img {
     content: ' \2794';
 }
 
+@media (hover: hover){
 .project-link button:hover {
     color: var(--clr-light-blue);
+}
 }
 
 /* contact */
@@ -542,10 +555,12 @@ nav img {
     transition: 0.3s;
 }
 
+@media (hover: hover){
 #contact a.btn:hover {
     /* border: 1px solid var(--clr-light-blue); */
     background: var(--clr-dark-hover);
     scale: 1.01;
+}
 }
 
 #contact h4 a {
@@ -553,9 +568,10 @@ nav img {
     opacity: 0.8;
     transition: 0.3s;
 }
-
+@media (hover: hover){
 #contact h4 a:hover {
     opacity: 1;
+}
 }
 
 /* footer */
@@ -606,10 +622,12 @@ footer p {
     color: hsla(0, 0%, 35%, 0.5);
 }
 
+@media (hover: hover){
 #next-modal-btn:hover,
 #previous-modal-btn:hover {
     scale: 1.05;
     color: var(--clr-dark-gray);
+}
 }
 
 #project-modal button {
@@ -632,11 +650,13 @@ footer p {
     transition: 0.3s;
 }
 
+@media (hover: hover){
 #close-modal-btn:hover {
     color: var(--clr-dark-gray);
     scale: 1.05;
     background-color: var(--clr-light-blue);
     color: var(--clr-background-gray);
+}
 }
 
 #project-modal section {
