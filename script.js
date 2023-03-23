@@ -118,3 +118,5 @@ let previousProject = () => {
 }
 
 previousProjectBtn.addEventListener('click', previousProject);
+
+sal()
