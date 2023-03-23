@@ -654,7 +654,7 @@ footer p {
 #close-modal-btn:hover {
     color: var(--clr-dark-gray);
     scale: 1.05;
-    background-color: var(--clr-light-blue);
+    background-color: var(--clr-main-gray);
     color: var(--clr-background-gray);
 }
 }

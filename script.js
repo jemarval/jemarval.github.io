@@ -119,4 +119,4 @@ let previousProject = () => {
 
 previousProjectBtn.addEventListener('click', previousProject);
 
-sal()
+sal({threshold:0.3});
