@@ -94,7 +94,8 @@ let closeModal = () => {
   projects[id].style.display = 'none';
 }
 
-closeModalBtn.addEventListener('click', closeModal);
+
+if(closeModalBtn){closeModalBtn.addEventListener('click', closeModal)}
 
 
 let nextProject = () => {
@@ -106,7 +107,7 @@ let nextProject = () => {
   modal.scrollTo(0,0);
 }
 
-nextProjectBtn.addEventListener('click', nextProject);
+if(nextProjectBtn){nextProjectBtn.addEventListener('click', nextProject)}
 
 let previousProject = () => {
   projects[id].style.display = 'none';
@@ -117,6 +118,17 @@ let previousProject = () => {
   modal.scrollTo(0,0);
 }
 
-previousProjectBtn.addEventListener('click', previousProject);
+if(previousProjectBtn){previousProjectBtn.addEventListener('click', previousProject)};
+
+
+/* Sal.js Animations */
+
+let fadingTitle = document.querySelector('h1>span');
+if (media.matches) {
+  fadingTitle.setAttribute('data-sal','fade');
+  fadingTitle.setAttribute('data-sal-duration','2000');
+  fadingTitle.setAttribute('data-sal-delay','300');
+  fadingTitle.setAttribute('data-sal-repeat','');
+}
 
 sal({threshold:0.3});

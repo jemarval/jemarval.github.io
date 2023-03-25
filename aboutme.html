@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f2f2f2"/>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/sal.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,12 +68,18 @@
 
         <section id="intro">
             <div id="intro-copy">
-                <h2>A bit <br>about me</h2>
-                <p>I'm a front-end developer, pursuing my Full Stack Engineering certification, and planning to complete it by the end of this year. I love working alongside other teammates to achieve beautiful and functional designs.</p>
-                <p>I love computers since I was a child when I taught myself to build websites just for fun, using Macromedia Dreamweaver 2.0. When I get stuck with something I don't know how to do, I can find out how to do it and get it done.</p>
-                <img src="/assets/img/dw.gif" alt="">
-                <p>I'm also a graduated Civil Engineer, a structural analyst, and a focused avid learner of professional web and mobile development technologies.</p>
-                <p class="focus border">I'd love to help you with your project and be part of your team. <br> Feel free to <a href="https://wa.me/56984186986" target="_blank">contact me on WhatsApp</a> or <a href="mailto:jemarval@gmail.com">by email</a>.</p>
+                <h2 data-sal-duration="1000" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease-out-bounce"
+                data-sal-repeat>A bit <br>about me</h2>
+                <p data-sal-duration="1000" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce"
+                data-sal-repeat>I'm a front-end developer, pursuing my Full Stack Engineering certification, and planning to complete it by the end of this year. I love working alongside other teammates to achieve beautiful and functional designs.</p>
+                <p data-sal-duration="1000" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce"
+                data-sal-repeat>I love computers since I was a child when I taught myself to build websites just for fun, using Macromedia Dreamweaver 2.0. When I get stuck with something I don't know how to do, I can find out how to do it and get it done.</p>
+                <img data-sal-duration="1000" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease-out-bounce"
+                data-sal-repeat src="/assets/img/dw.gif" alt="">
+                <p data-sal-duration="1000" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease-out-bounce"
+                data-sal-repeat >I'm also a graduated Civil Engineer, a structural analyst, and a focused avid learner of professional web and mobile development technologies.</p>
+                <p data-sal-duration="1000" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease-out-bounce"
+                data-sal-repeat class="focus border">I'd love to help you with your project and be part of your team. <br> Feel free to <a href="https://wa.me/56984186986" target="_blank">contact me on WhatsApp</a> or <a href="mailto:jemarval@gmail.com">by email</a>.</p>
                 <!--TODO ADD WHEN FINISH CURATING CODEPEN PROFILE <p>Check out some fun personal projects and challenges in my <a href="">codepen profile</a></p> -->
             </div>
             <article id="skills">
@@ -153,20 +160,26 @@
             <div>
                 <div class="hobbies">
                     <h3>I love running,</h3>
-                    <img src="/assets/img/aboutme-running.jpg" alt="">
+                    <img data-sal="slide-up" data-sal-duration="1000"
+                    data-sal-easing="ease-out-bounce" src="/assets/img/aboutme-running.jpg" alt="">
                 </div>
                 <div class="hobbies">
                     <h3>traveling,</h3>
-                    <img src="/assets/img/aboutme-traveling.jpg" alt="">
+                    <img data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce" src="/assets/img/aboutme-traveling.jpg" alt="">
                 </div>
                 <div id="hobby-photo">
                     <h3>and just taking photos.</h3>
                     <!--TODO ADD PHOTOS from flickr <img src="" alt=""> -->
                     <div>
-                        <img src="/assets/img/flickr1.jpg" alt="">
-                        <img src="/assets/img/flickr2.jpg" alt="">
-                        <img src="/assets/img/flickr3.jpg" alt="">
-                        <img src="/assets/img/flickr4.jpg" alt="">
+                        <img data-sal="slide-up" data-sal-duration="1000"
+                        data-sal-easing="ease-out-bounce" src="/assets/img/flickr1.jpg" alt="">
+                        <img data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce" src="/assets/img/flickr2.jpg" alt="">
+                        <img data-sal="slide-up" data-sal-duration="1000"
+                        data-sal-easing="ease-out-bounce" src="/assets/img/flickr3.jpg" alt="">
+                        <img data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200"
+                        data-sal-easing="ease-out-bounce" src="/assets/img/flickr4.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -191,9 +204,9 @@
             <p>Copyright ©2022 [Jose Marval] jemarval.github.io</p>
         </footer>
 
-        
-        <script src="/script.js"></script>
-        <script src="/translationAboutMe.js"></script>
+        <script src="/assets/js/sal.js"></script>
+        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/translationAboutMe.js"></script>
 </body>
 
 </html>
